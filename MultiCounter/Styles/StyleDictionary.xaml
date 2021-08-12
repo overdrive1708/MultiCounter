@@ -1,0 +1,155 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Border(Left)  -->
+    <Style
+        x:Key="BorderStyle_Left"
+        TargetType="Border">
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="BorderThickness" Value="2,2,2,2" />
+    </Style>
+
+    <!--  Border(Non-Left)  -->
+    <Style
+        x:Key="BorderStyle_NonLeft"
+        TargetType="Border">
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="BorderThickness" Value="0,2,2,2" />
+    </Style>
+
+    <!--  Border(No.1)  -->
+    <Style
+        x:Key="BorderStyle_Counter1"
+        BasedOn="{StaticResource BorderStyle_Left}"
+        TargetType="Border">
+        <Style.Triggers>
+            <DataTrigger
+                Binding="{Binding SelectedCounter}"
+                Value="0">
+                <Setter Property="Background" Value="LightBlue" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--  Border(No.2)  -->
+    <Style
+        x:Key="BorderStyle_Counter2"
+        BasedOn="{StaticResource BorderStyle_NonLeft}"
+        TargetType="Border">
+        <Style.Triggers>
+            <DataTrigger
+                Binding="{Binding SelectedCounter}"
+                Value="1">
+                <Setter Property="Background" Value="LightBlue" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--  Border(No.3)  -->
+    <Style
+        x:Key="BorderStyle_Counter3"
+        BasedOn="{StaticResource BorderStyle_NonLeft}"
+        TargetType="Border">
+        <Style.Triggers>
+            <DataTrigger
+                Binding="{Binding SelectedCounter}"
+                Value="2">
+                <Setter Property="Background" Value="LightBlue" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--  Border(No.4)  -->
+    <Style
+        x:Key="BorderStyle_Counter4"
+        BasedOn="{StaticResource BorderStyle_NonLeft}"
+        TargetType="Border">
+        <Style.Triggers>
+            <DataTrigger
+                Binding="{Binding SelectedCounter}"
+                Value="3">
+                <Setter Property="Background" Value="LightBlue" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--  Border(No.5)  -->
+    <Style
+        x:Key="BorderStyle_Counter5"
+        BasedOn="{StaticResource BorderStyle_NonLeft}"
+        TargetType="Border">
+        <Style.Triggers>
+            <DataTrigger
+                Binding="{Binding SelectedCounter}"
+                Value="4">
+                <Setter Property="Background" Value="LightBlue" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--  Border(Count)  -->
+    <Style
+        x:Key="BorderStyle_Count"
+        TargetType="Border">
+        <Setter Property="Margin" Value="10,5,10,5" />
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="BorderThickness" Value="1,1,1,1" />
+    </Style>
+
+    <!--  TextBlock(Title)  -->
+    <Style
+        x:Key="TextBlockStyle_Title"
+        TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="20" />
+    </Style>
+
+    <!--  Button(Up)  -->
+    <Style
+        x:Key="ButtonStyle_Up"
+        TargetType="Button">
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="Margin" Value="10,5,10,5" />
+        <Setter Property="Content" Value="▲" />
+        <Setter Property="MaxHeight" Value="20" />
+    </Style>
+
+    <!--  TextBlock(Count)  -->
+    <Style
+        x:Key="TextBlockStyle_Count"
+        TargetType="TextBlock">
+        <Setter Property="Margin" Value="10,5,10,5" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="20" />
+    </Style>
+
+    <!--  Button(Down)  -->
+    <Style
+        x:Key="ButtonStyle_Down"
+        TargetType="Button">
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Margin" Value="10,5,10,5" />
+        <Setter Property="Content" Value="▼" />
+        <Setter Property="MaxHeight" Value="20" />
+    </Style>
+
+    <!--  Button(Clear)  -->
+    <Style
+        x:Key="ButtonStyle_Clear"
+        TargetType="Button">
+        <Setter Property="Margin" Value="10,5,10,5" />
+        <Setter Property="Content" Value="クリア" />
+        <Setter Property="MaxHeight" Value="20" />
+    </Style>
+
+    <!--  TextBox(Memo)  -->
+    <Style
+        x:Key="TextBoxStyle_Memo"
+        TargetType="TextBox">
+        <Setter Property="Margin" Value="10,5,10,5" />
+        <Setter Property="Text" Value="メモ欄" />
+    </Style>
+</ResourceDictionary>

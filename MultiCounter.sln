@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiCounter", "MultiCounter\MultiCounter.csproj", "{00B7C3CC-1320-4869-8855-B890D638179D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00B7C3CC-1320-4869-8855-B890D638179D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B7C3CC-1320-4869-8855-B890D638179D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B7C3CC-1320-4869-8855-B890D638179D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B7C3CC-1320-4869-8855-B890D638179D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB0D597B-8B53-4797-86FE-DAA25AFB69BD}
+	EndGlobalSection
+EndGlobal
